@@ -1,0 +1,67 @@
+.header {
+  height: 100vh;
+  background-image: url("./assets/work-desk__dustin-lee.jpg");
+  background-size: cover;
+}
+
+.header::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #004a75;
+  opacity: 50%;
+}
+
+.header-text {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-outline-light {
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-hover-color: #007bc1;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #007bc1;
+  --bs-btn-active-border-color: #007bc1;
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: transparent;
+  --bs-gradient: none;
+}
+
+.panel {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #e5e5e5;
+}
+
+.panel-text {
+  text-align: center;
+}
+
+.panel-content {
+  padding-top: 40px;
+}
+
+#contents-1 {
+  border: 2px solid black;
+  margin: 2px;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #004a75;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0px;
+}
