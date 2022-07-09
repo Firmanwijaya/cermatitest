@@ -3,141 +3,117 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      img {
-        width: 3cm;
-        height: 3cm;
-        z-index: 3;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        bottom: 0px;
-        right: 0px;
-      }
-    </style>
     <title>Firman Wijaya | Cermati.com Front-end Developer Entry Test</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <section class="notification container-fluid d-flex justify-content-center py-2">
+      <div class="row d-flex justify-content-sm-center align-items-center">
+        <span class="col-12 col-md-7 pb-2"
+          >By accessing and using this website, you acknowledge that you have read and understand our <a href="#">Cookie Policy</a>, <a href="#">Privacy Policy</a> and our <a href="#">Terms of Service</a>.</span
+        >
+        <div class="col-auto">
+          <button type="button" class="btn btn-primary gotit" onclick="diklik()">Got It</button>
+        </div>
+      </div>
+    </section>
     <div class="header">
-      <img src="./assets/y-logo-white.png" />
-      <div class="header-text">
+      <img class="logo" src="./assets/y-logo-white.png" />
+      <div class="header-text text-center">
         <h2>Hello! I'm Firman Wijaya</h2>
         <h3><b>Consult, Design, and Develop Websites</b></h3>
-        <h5>
+        <span>
           Have something great in mind? Feel free to contact me. <br />
           I'll help you to make it happen.
-        </h5>
+        </span>
         <br />
-        <a href="#" class="btn btn-outline-light">LET'S MAKE CONTACT</a>
+        <button class="btn btn-outline-light rounded-0 mt-4">LET'S MAKE CONTACT</button>
       </div>
     </div>
 
     <section class="panel">
-      <div class="panel-text">
-        <h2>How Can I Help You?</h2>
-        <h5>
-          Our work then targeted, best practices outcomes social innovation synergy.<br />
-          Venture philanthropy, revolutionary inclusive policymaker relief. User-centered<br />
-          program areas scale.
-        </h5>
-      </div>
-      <div class="panel-content">
-        <div class="container-fluid">
-          <div id="contents" class="row">
-            <div id="contents-1" class="col-md-4">
-              <div class="row">
-                <div id="contents-1-content" class="col">
-                  <div id="contents-1-content-title" class="col">
-                    <h4>Consult</h4>
-                  </div>
-                  <div id="contents-1-content-icon" class="col">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                  </div>
-                  <div id="contents-1-content-text" class="row">
-                    <p style="margin-bottom: 0">
-                      Co-create, design thinking; strengthen infrastructure resist granular. Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling revolutionary progress.
-                    </p>
-                  </div>
+      <div class="container">
+        <div class="panel-text">
+          <h2>How Can I Help You?</h2>
+          <h5>
+            Our work then targeted, best practices outcomes social innovation synergy.<br />
+            Venture philanthropy, revolutionary inclusive policymaker relief. User-centered<br />
+            program areas scale.
+          </h5>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 mt-4">
+          <div class="col">
+            <div class="card rounded-0">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Consult</h5>
+                  <i class="fa-solid fa-comments text-secondary"></i>
                 </div>
+                <p class="card-text">Co-create, design thinking; strengthen infrastructure resist granular. Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling revolutionary progress.</p>
               </div>
             </div>
-            <div id="contents-1" class="col-md-4">
-              <div class="row">
-                <div id="contents-1-content" class="col">
-                  <div id="contents-1-content-title" class="row">
-                    <h4>Design</h4>
-                  </div>
-                  <div id="contents-1-content-text" class="row">
-                    <p style="margin-bottom: 0">
-                      Policymaker collaborates collective impact humanitarian shared value vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile issue outcomes vibrant boots on the ground sustainable.
-                    </p>
-                  </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Design</h5>
+                  <i class="fa-solid fa-paintbrush text-secondary"></i>
                 </div>
+                <p class="card-text">
+                  Policymaker collaborates collective impact humanitarian shared value vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile issue outcomes vibrant boots on the ground sustainable.
+                </p>
               </div>
             </div>
-            <div id="contents-1" class="col-md-4">
-              <div class="row">
-                <div id="contents-1-content" class="col">
-                  <div id="contents-1-content-title" class="row">
-                    <h4>Develop</h4>
-                  </div>
-                  <div id="contents-1-content-text" class="row">
-                    <p style="margin-bottom: 0">
-                      Revolutionary circular, movements a or impact framework social impact low- hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities of thought provoking.
-                    </p>
-                  </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Develop</h5>
+                  <i class="fa-solid fa-box text-secondary"></i>
                 </div>
+                <p class="card-text">
+                  Revolutionary circular, movements a or impact framework social impact low- hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities of thought provoking.
+                </p>
               </div>
             </div>
-            <div id="contents-1" class="col-md-4">
-              <div class="row">
-                <div id="contents-1-content" class="col">
-                  <div id="contents-1-content-title" class="row">
-                    <h4>Marketing</h4>
-                  </div>
-                  <div id="contents-1-content-text" class="row">
-                    <p style="margin-bottom: 0">
-                      Peaceful; vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resilient, uplift social transparent effective.
-                    </p>
-                  </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Marketing</h5>
+                  <i class="fa-solid fa-bullhorn text-secondary"></i>
                 </div>
+                <p class="card-text">
+                  Peaceful; vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resilient, uplift social transparent effective.
+                </p>
               </div>
             </div>
-            <div id="contents-1" class="col-md-4">
-              <div class="row">
-                <div id="contents-1-content" class="col">
-                  <div id="contents-1-content-title" class="row">
-                    <h4>Manage</h4>
-                  </div>
-                  <div id="contents-1-content-text" class="row">
-                    <p style="margin-bottom: 0">
-                      Change-makers innovation or shared unit of analysis. Overcome injustice outcomes strategize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism corporate social.
-                    </p>
-                  </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Manage</h5>
+                  <i class="fa-solid fa-bars-staggered text-secondary"></i>
                 </div>
+                <p class="card-text">Change-makers innovation or shared unit of analysis. Overcome injustice outcomes strategize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism corporate social.</p>
               </div>
             </div>
-            <div id="contents-1" class="col-md-4">
-              <div class="row">
-                <div id="contents-1-content" class="col">
-                  <div id="contents-1-content-title" class="row">
-                    <h4>Evolve</h4>
-                  </div>
-                  <div id="contents-1-content-text" class="row">
-                    <p style="margin-bottom: 0">
-                      Activate catalyze and impact contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leadership mass incarceration. Outcomes big data, fairness, social game-changer.
-                    </p>
-                  </div>
+          </div>
+          <div class="col">
+            <div class="card rounded-0">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Evolve</h5>
+                  <i class="fa-solid fa-chart-line text-secondary"></i>
                 </div>
+                <p class="card-text">
+                  Activate catalyze and impact contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leadership mass incarceration. Outcomes big data, fairness, social game-changer.
+                </p>
               </div>
             </div>
           </div>
@@ -145,9 +121,22 @@
       </div>
     </section>
 
-    <section class="footer">
-      <p>&copy; 2022 Firman Wijaya. All rights reserved.</p>
+    <div class="newsletter container">
+      <div class="newsletter-content">
+        <i class="d-flex justify-content-end fa-solid fa-xmark"></i>
+        <h4>Get latest updates in web technologies</h4>
+        <span>I write articles to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up yo my newsletter to get them all.</span>
+        <div class="container d-flex justify-content-sm-between row gap-2 mt-4">
+          <input type="email" class="col-8 col-sm-8" placeholder="Email Address" />
+          <button class="col-3 col-sm btn btn-warning rounded-0">Count me in!</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer py-4">
+      <span>&copy; 2022 Firman Wijaya. All rights reserved.</span>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="main.js"></script>
   </body>
