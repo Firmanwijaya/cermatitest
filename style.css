@@ -6,8 +6,8 @@ body {
   background-image: url("./assets/work-desk__dustin-lee.jpg");
   background-size: cover;
   position: relative;
-  margin-top: 70px;
   transition: 2s;
+  margin-top: 70px;
 }
 
 .header::after {
@@ -73,10 +73,12 @@ body {
 
 .notification {
   background-color: #e5e5e5;
-  height: 0;
+  border-bottom: 0.5px solid grey;
   position: fixed;
-  transition: height 2s;
-  z-index: 10;
+  transition: 2s;
+  z-index: 100;
+  overflow: hidden;
+  transform: TranslateY(0);
   margin-top: -70px;
 }
 
@@ -85,8 +87,7 @@ body {
 }
 
 .newsletter {
-  width: 600px;
-  position: absolute;
+  max-width: 600px;
   padding: 25px;
   bottom: 0;
   background-color: #007bc1;
@@ -95,18 +96,8 @@ body {
   overflow: hidden;
   position: fixed;
   z-index: 5;
-  height: 0px;
   transform: translateY(100%);
-}
-
-body:hover .newsletter {
-  height: auto;
-  transform: translateY(0);
-}
-
-.newsletterclose {
-  height: auto;
-  transform: translateY(100%);
+  display: block;
 }
 
 .newsletter-content {
@@ -127,4 +118,24 @@ body:hover .newsletter {
   text-align: center;
   align-items: center;
   align-content: center;
+}
+
+/* Breakpoint */
+
+@media (min-width: 961px) {
+  .col {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 960px) {
+  .col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .col {
+    width: 100%;
+  }
 }

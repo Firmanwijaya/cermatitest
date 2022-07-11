@@ -1,25 +1,17 @@
-// const button = document.querySelector(".gotit"),
-//   notification = document.querySelector(".notification");
-
-// button.addEventListener("click", () => {
-//   notification.classList.add("visually-hidden");
-// });
-
 function diklik() {
-  const notification = document.querySelector(".notification");
-  document.querySelector(".header").style.margin = "0";
-  // document.querySelector(".notification").style.height = "0";
-
-  if (document.querySelector(".notification").style.height === "0") {
-    notification.classList.remove(".notification");
-  } else {
-    true;
-  }
+  document.querySelector(".header").style.marginTop = "0";
+  document.querySelector(".notification").style.marginTop = "0";
+  document.querySelector(".notification").style.transform = "TranslateY(-100%)";
 }
 
 const close = document.querySelector(".close"),
   newsletter = document.querySelector(".newsletter");
+window.addEventListener("load", function () {
+  setTimeout(function open() {
+    document.querySelector(".newsletter").style.transform = "TranslateY(0)";
+  }, 1000);
+});
 
 close.addEventListener("click", () => {
-  newsletter.classList.add("visually-hidden");
+  document.querySelector(".newsletter").style.transform = "TranslateY(100%)";
 });
